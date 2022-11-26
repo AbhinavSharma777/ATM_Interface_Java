@@ -15,9 +15,9 @@ public class Atm {
         int enter=sc.nextInt();
         if(pin==enter) {
             while (true) {
-                System.out.println("--**--**--WELCOME TO ATM--**--**");
+                System.out.println("GOOD MORNING. WELCOME TO OUR ATM. HOW MAY I HELP YOU. PLEASE SELECT ANY ONE OPTION.");
                 System.out.println("Enter 1 For Transaction History");
-                System.out.println("Enter 2 For Whithdraw Money");
+                System.out.println("Enter 2 For Withdraw Money");
                 System.out.println("Enter 3 For Deposite Money");
                 System.out.println("Enter 4 for Transfer");
                 System.out.println("Enter 5 for exit");
@@ -26,15 +26,15 @@ public class Atm {
                 switch (n) {
                     case 1:
                         System.out.println("Transaction History ");
-                        System.out.println("Money Whithdraw -"+Whithdraw);
+                        System.out.println("Money Withdraw -"+Whithdraw);
                         System.out.println("Money Deposite -"+Deposite);
                         System.out.println("Money Transfer-"+Transfer);
-                        System.out.println("The Current Balance is-"+ Balance);
+                        System.out.println("Your Current Balance is-"+ Balance);
                         System.out.println();
 
                         break;
                     case 2:
-                        System.out.println("Enter A Whithdraw Ammount");
+                        System.out.println("Enter A Withdraw Amount");
                         Whithdraw=sc.nextInt();
                         if(Whithdraw>Balance) {
                             System.out.println("Insufficient Balance!");
@@ -43,7 +43,7 @@ public class Atm {
                         }
                         else {
                           Balance=Balance-Whithdraw;
-                            System.out.println("The Whithdraw Money is-"+Whithdraw);
+                            System.out.println("The Withdraw Money is-"+Whithdraw);
                             System.out.println("Collect Your Money");
                             System.out.println();
 
@@ -63,25 +63,25 @@ public class Atm {
                             System.out.println("Enter The  IFSC Code Of Benificiary ");
                             int ifsc= sc.nextInt();
                             System.out.println("Enter Account No");
-                            System.out.println("confirm Account Number \n1.Confirm \n2.No");
+                            System.out.println("Confirm Account Number \n1.Confirm \n2.No");
                             int choice = sc.nextInt();
                             if(choice==1) {
-                                System.out.println("Enter Ammount");
+                                System.out.println("Enter Amount");
                                 Balance=Balance-Transfer;
-                                System.out.println("Ammount Succfully Transfer ");
+                                System.out.println("Amount Succesfully Transfered! ");
                                 break;
                             }
                             else {
-                                System.out.println("Invalid Account No");
+                                System.out.println("Invalid Account Number");
 
                             }
                         }
                         break ;
                     case 5:
-                        System.out.println("Thank You For Using Our ATM");
+                        System.out.println("Thank You For Using Our ATM. Please visit again!");
                         System.exit(0);
                     default:
-                        System.out.println("Invalid Option");
+                        System.out.println("Invalid Option. Sorry!");
 
                 }
             }
