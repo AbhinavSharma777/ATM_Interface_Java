@@ -1,7 +1,7 @@
 package Atm1;
 import java.util.Scanner;
 
-public class Atm {
+public class Atm1 {
     public static void main(String[] args) {
         int Balance=10000;
         int Whithdraw=0;
