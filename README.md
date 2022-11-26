@@ -1,1 +1,1 @@
-# Smartech_Java_Internship
+This is a basic interface if an ATM. It has various options such as Withdraw, Deposit, and it also has your own pin saved. If someone enters the wrong in more than three time then it automatically exits the program.
